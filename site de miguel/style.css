@@ -1,0 +1,102 @@
+/* Fonte estilo Minecraft */
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1b2a; /* azul escuro */
+    color: #ffffff; /* branco */
+    text-align: center;
+}
+
+/* Header moderno com glow */
+header {
+    background-color: #1b263b;
+    padding: 40px 20px;
+    border-bottom: 3px solid #415a77;
+    text-shadow: 0 0 10px #63ace5, 0 0 20px #63ace5;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: glow 2s infinite alternate;
+}
+
+header p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #a9cce3;
+}
+
+/* Glow animation */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #63ace5, 0 0 20px #63ace5;
+    }
+    to {
+        text-shadow: 0 0 20px #63ace5, 0 0 40px #63ace5;
+    }
+}
+
+/* Main */
+main {
+    padding: 20px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 50px;
+}
+
+/* Social links com glow ao hover */
+.social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #63ace5;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s, text-shadow 0.3s;
+}
+
+.social a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    text-shadow: 0 0 10px #63ace5, 0 0 20px #63ace5;
+}
+
+/* Galeria de memes com glow ao hover */
+.gallery .memes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 250px;
+    border: 3px solid #63ace5;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    border-color: #ffffff;
+    box-shadow: 0 0 20px #63ace5, 0 0 40px #63ace5;
+}
+
+/* Footer com glow suave */
+footer {
+    background-color: #1b263b;
+    padding: 20px;
+    border-top: 3px solid #415a77;
+    font-size: 0.9em;
+    color: #a9cce3;
+    text-shadow: 0 0 5px #63ace5;
+}
